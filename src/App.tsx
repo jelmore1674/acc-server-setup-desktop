@@ -1,16 +1,23 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { Input, Select } from './components';
 
-const H1 = styled.h1({
-	color: 'green',
-	fontSize: '72px',
+const Container = styled.main({
+	maxWidth: '1400px',
+	width: '100%',
+	padding: '1rem 1rem',
+	backgroundColor: '#fafafa',
+	height: '100%',
 });
 
 function App() {
 	return (
-		<div>
-			<H1>Hello World</H1>
-		</div>
+		<Container>
+			<Input label='Server Name' type='text' />
+			<Input label='Server Admin Password' type='text' />
+			<Input label='Spectator Password' type='text' />
+			<Select />
+		</Container>
 	);
 }
 
